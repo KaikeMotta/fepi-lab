@@ -1,0 +1,26 @@
+h1 {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings:
+        "MORF" 22,
+        "SHLN" 63.2;
+    font-size: 80px;
+    text-align: center;
+}
+
+p {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 40px;
+}
+
+
+figure{
+    background-color: #f8f8f8;
+    border: 1px solid #eeeeee;
+    text-align: center;
+
+}

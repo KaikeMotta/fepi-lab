@@ -1,0 +1,28 @@
+
+
+h1 {
+    background-image: url(../img/sobre-background.jpg);
+
+}
+
+h2 {
+    border-bottom: 2px groove #000000;
+
+}
+
+figure {
+    background-color: #790c0c;
+    border: 1px solid #4010af;
+    text-align: center;
+
+}
+
+figcaption {
+    font-style: italic;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
