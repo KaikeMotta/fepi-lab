@@ -77,4 +77,30 @@
 #familia-pelho{
     float: right;
     margin: 0 0 10px 10px;
+
+
+}
+
+div{
+   width: 100px;
+   height: 100px;
+   border: 1px  solid #000;
+   margin-bottom:  5px;
+}
+
+
+.amarelo{
+   background-color: yellow;
+}
+
+.azul{
+   background-color: blue;
+}
+
+.vermelho{
+   background-color: red;
+}
+
+.fonte-clara{
+   color: white;
 }
