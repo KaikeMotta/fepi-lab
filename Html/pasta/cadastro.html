@@ -1,6 +1,5 @@
-[19:53] LUCAS VIEIRA AZEVEDO
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
  
 <head>
     <meta charset="UTF-8" />
@@ -10,77 +9,98 @@
 </head>
  
 <body>
+    <header class="grid-header-container">
+        <div class="top-left">
+            <h1>Cadastro</h1>
+            <h2>Cadastre-se para promoçõses! </h2>
+        </div>
+        <div class="top-right">
+            <img src="img/MicrosoftTeams-image.png" alt="Cadastro">
+        </div>
+       
+    </header>
+ 
     <form action="">
         <fieldset>
             <legend>Dados Pessoais</legend>
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" required>
-            <label for="email">Email</label>
-            <input type="text" name="email" required>
-            <label for="data">Data de Nascimento</label>
-            <input type="date" name="data">
-            <label for="rg">RG</label>
-            <input type="text" title="Coloque seu RG completo" name="rg" maxlength="13" min="4" required>
-            <label for="cpf">CPF</label>
-            <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="___.___.___-__" required>
-            <label for="">Cidade</label>
-            <input type="text" name="cidade">
-            <label for="estado">Estado</label>
-            <select name="estado">
-                <option value="">Selecione o estado</option>
-                <option value="AC">Acre</option>
-                <option value="AL">Alagoas</option>
-                <option value="AP">Amapá</option>
-                <option value="AM">Amazonas</option>
-                <option value="BA">Bahia</option>
-                <option value="CE">Ceará</option>
-                <option value="DF">Distrito Federal</option>
-                <option value="ES">Espírito Santo</option>
-                <option value="GO">Goiás</option>
-                <option value="MA">Maranhão</option>
-                <option value="MT">Mato Grosso</option>
-                <option value="MS">Mato Grosso do Sul</option>
-                <option value="MG">Minas Gerais</option>
-                <option value="PA">Pará</option>
-                <option value="PB">Paraíba</option>
-                <option value="PR">Paraná</option>
-                <option value="PE">Pernambuco</option>
-                <option value="PI">Piauí</option>
-                <option value="RJ">Rio de Janeiro</option>
-                <option value="RN">Rio Grande do Norte</option>
-                <option value="RS">Rio Grande do Sul</option>
-                <option value="RO">Rondônia</option>
-                <option value="RR">Roraima</option>
-                <option value="SC">Santa Catarina</option>
-                <option value="SP">São Paulo</option>
-                <option value="SE">Sergipe</option>
-                <option value="TO">Tocantins</option>
+            <div class="grid-container">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" required>
+                <label for="email">Email</label>
+                <input type="text" name="email" required>
+                <label for="data">Data de Nascimento</label>
+                <input type="date" name="data">
+                <label for="rg">RG</label>
+                <input type="text" title="Coloque seu RG completo" name="rg" maxlength="13" min="4" required>
+                <label for="cpf">CPF</label>
+                <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="___.___.___-__" required>
+            </div>
         </fieldset>
         <fieldset>
             <legend>Endereço</legend>
-            <label for="">Rua</label>
-            <input type="text" nome="rua">
-            <label for="numero">Número</label>
-            <input type="number" name="numero">
-            <label for="bairro">Bairro</label>
-            <input type="text" name="bairro">
-            <label for="cep">CEP</label>
-            <input type="text" name="cep" pattern="\d{5}-\d{3}" required>
+            <div class="grid-container">
+                <label for="">Rua</label>
+                <input type="text" nome="rua">
+                <label for="numero">Número</label>
+                <input type="number" name="numero">
+                <label for="bairro">Bairro</label>
+                <input type="text" name="bairro">
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" pattern="\d{5}-\d{3}" required>
+                <label for="">Cidade</label>
+                <input type="text" name="cidade">
+                <label for="estado">Estado</label>
+                <select name="estado">
+                    <option value="">Selecione o estado</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
         </fieldset>
         <fieldset>
             <legend>Login</legend>
-            <label for="image">Imagem de Perfil</label>
-            <input type="file" name="image" accept="image/*" title="Apenas pnj, jpg, bmp, webp ou gif">
-            <label for="login">Login</label>
-            <input type="text" name="login" required>
-            <label for="senha">Senha</label>
-            <input type="password" name="senha" minlength="8" required>
-            <label for="confirmar">Confirmar Senha</label>
-            <input type="password" name="confirmar" minlength="8" required>
+            <div class="grid-container">
+                <label for="image">Imagem de Perfil</label>
+                <input type="file" name="image" accept="image/*" title="Apenas pnj, jpg, bmp, webp ou gif">
+                <label for="login">Login</label>
+                <input type="text" name="login" required>
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" minlength="8" required>
+                <label for="confirmar">Confirmar Senha</label>
+                <input type="password" name="confirmar" minlength="8" required>
+            </div>
         </fieldset>
-        <input type="reset" value="Cancelar" name="Botão Cancelar">
-        <input type="submit" value="Enviar" name="Botão enviar">
+        <div class="grid-button-container">
+            <input type="reset" value="Cancelar" name="Botão Cancelar">
+            <input type="submit" value="Enviar" name="Botão enviar">
+        </div>
     </form>
+    <hr>
 </body>
  
 </html>

@@ -1,0 +1,60 @@
+.grid-container{
+    display: grid;
+    grid-template-columns:  auto;
+    gap: 10px;
+}
+body{
+    width: 60%;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+fieldset{
+    margin-bottom: 10px;
+    background-color: lightgray;
+    border-radius: 5px;
+
+}
+fieldset input, select{
+    font-size: medium;
+}
+
+fieldset legend{
+
+    font-weight: bold;
+}
+.grid-button-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 5px 0px;
+}
+.grid-button-container input {
+    font-size: medium;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 5px;
+}
+ 
+.grid-button-container input[type=submit] {
+    background-color: lightblue;
+}
+ 
+.grid-button-container input[type=reset] {
+    background-color: lightcoral;
+}
+
+.grid-header-container{
+    display: grid;
+    grid-template-areas: 'top-left top-right';
+    border-bottom: #333 5px solid ;
+    margin-bottom: 5px;
+
+}
+
+.top-right{
+    grid-area: top-right;
+    justify-self: right;
+}
+.top-lef{
+    grid-area: top-lef;
+
+}
