@@ -1,47 +1,93 @@
+    
 :root{
-    --cor-base: #333;
-    --cor-menu: #036;
+   --cor-base: #333;
+   --cor-menu: #036;
+   --cor-menu-lateral: rgb(150, 149, 149);
+   --cor-menu-lateral-item: #cccff0;
 }
 .sacola {
-   background: url(../img/sacola.png) no-repeat top right;
-   font-size: 14px;
-   padding-right: 35px;
-   text-align: right;
-   width: 140px; 
-   padding-top: 8px;  
-   position: absolute;
-   top: 0px;
-   right: 0px;
+  background: url(../img/sacola.png) no-repeat top right;
+  font-size: 14px;
+  padding-right: 35px;
+  text-align: right;
+  width: 140px;
+  padding-top: 8px;  
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
-
+ 
 .menu-opcoes ul {
-    font-size: 15px;
+   font-size: 15px;
 }
 .menu-opcoes ul li{
-    display: inline;
-    margin-left: 20px;
+   display: inline;
+   margin-left: 20px;
 }
-
+ 
 .menu-opcoes a {
-    color: var(--cor-menu);
+   color: var(--cor-menu);
 }
-
+ 
 body {
-    color: var(--cor-base);
-    font-family: "Roboto", sans-serif;
+   color: var(--cor-base);
+   font-family: "Roboto", sans-serif;
 }
-
+ 
 .container{
-    margin: 0 auto;
-    width: 90%;
+   margin: 0 auto;
+   width: 90%;
 }
-
+ 
 header{
-    position: relative;
+   position: relative;
+}
+ 
+.menu-opcoes{
+   position: absolute;
+   top: 60px;
+   right: 0;
+}
+ 
+.busca,
+.menu-departamentos {
+  background-color: var(--cor-menu-lateral);
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 10px;
+  width: 230px;
+  float: left;
+}
+ 
+.menu-departamentos{
+    margin-top: 10px;
+    padding-bottom: 10px;
+    clear: left;
 }
 
-.menu-opcoes{
-    position: absolute;
-    bottom: 0;
-    right: 0;
+.busca form,
+.menu-departamentos h2{
+  margin: 10px;
+}
+ 
+.menu-departamentos li {
+  background-color: var(--cor-menu-lateral-item);
+  margin-bottom: 1px;
+  padding: 5px 10px;
+}
+ 
+.menu-departamentos a{
+  color:#333;
+  text-decoration: none;
+}
+ 
+.busca input{
+  vertical-align: middle;
+}
+ 
+.buca input[type="search"] {
+  width: 170px;
+}
+.destaque{
+    margin-top: 10px;
 }
