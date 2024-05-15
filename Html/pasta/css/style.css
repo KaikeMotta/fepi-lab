@@ -180,3 +180,26 @@ footer{
    right: 0;
 }
  
+.menu-opcoes a:hover{
+   color: #413131;
+}
+ 
+.menu-opcoes a:active{
+   color: #463b3b;
+}
+ 
+.menu-departamentos li ul {
+   display: none;
+}
+ 
+.menu-departamentos li:hover ul {
+   display: block;
+}
+ 
+.menu-departamentos ul ul li {
+   background-color: var(--cor-menu-lateral);
+}
+ 
+.menu-departamentos li li a::before {
+   content: '» ';
+}
